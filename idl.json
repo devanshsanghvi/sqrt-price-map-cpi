@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "name": "sqrt_program_cpi",
+  "instructions": [],
+  "accounts": [
+    {
+      "name": "TickSqrtPriceMap",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "tick_sqrt_price_map",
+            "type": {
+              "array": [
+                {
+                  "defined": "TickSqrtPricInfo"
+                },
+                443636
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "types": [
+    {
+      "name": "TickSqrtPricInfo",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "sqrtPrice",
+            "type": {
+              "array": [
+                {
+                  "defined": "f64"
+                },
+                2
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
