@@ -1,7 +1,9 @@
 [package]
 name = "sqrt_program_cpi"
+description = "helps to get sqrt price using index"
 version = "0.1.0"
 edition = "2021"
+license = "MIT OR Apache-2.0"
 
 [features]
 default = ["cpi"]
