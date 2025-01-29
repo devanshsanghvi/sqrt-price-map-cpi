@@ -1,13 +1,15 @@
 use anchor_lang::prelude::*;
 
-#[zero_copy]
+#[repr(C)]
+#[zero_copy(unsafe)]
 #[repr(packed)]
 #[derive(Default, Debug, PartialEq)]
 pub struct TickSqrtPricInfo {
     pub sqrt_price: [f64; 2],
 }
 
-#[account(zero_copy)]
+#[repr(C)]
+#[account(zero_copy(unsafe))]
 #[repr(packed)]
 pub struct TickSqrtPriceMap {
     pub tick_sqrt_price_map: [TickSqrtPricInfo; 443636],
