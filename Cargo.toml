@@ -1,7 +1,7 @@
 [package]
 name = "sqrt_program_cpi"
 description = "helps to get sqrt price using index"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 
@@ -13,4 +13,4 @@ no-log-ix-name = []
 cpi = ["no-entrypoint"]
 
 [dependencies]
-anchor-lang = "0.30.1"
+anchor-lang = { git = "https://github.com/coral-xyz/anchor", rev = "7b6c2b355e6068c20dd2c91f402e53d5f85ddd4a" }
